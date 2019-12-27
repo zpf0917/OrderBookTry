@@ -1,5 +1,6 @@
 #pragma once
 
+
 class OrderBook {
     std::map<float, int> bids, asks;
 public:
