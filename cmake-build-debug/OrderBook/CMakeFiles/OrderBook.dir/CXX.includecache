@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/OrderBook.cpp
+OrderBook.h
+/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/OrderBook.h
+
+/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/OrderBook.h
+map
+-
+iostream
+-
+

@@ -292,3 +292,46 @@ Parsed CXX implicit link information from above output:
   implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0e234/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0e234.dir/build.make CMakeFiles/cmTC_0e234.dir/build
+Building C object CMakeFiles/cmTC_0e234.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_0e234.dir/CheckIncludeFile.c.o   -c /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0e234
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e234.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0e234.dir/CheckIncludeFile.c.o  -o cmTC_0e234 
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ecfa0/fast && /Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_ecfa0.dir/build.make CMakeFiles/cmTC_ecfa0.dir/build
+Building C object CMakeFiles/cmTC_ecfa0.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ecfa0.dir/src.c.o   -c /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ecfa0
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecfa0.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ecfa0.dir/src.c.o  -o cmTC_ecfa0 
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

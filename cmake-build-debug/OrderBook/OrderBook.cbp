@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OrderBook"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\OrderBook\;CMake Files\OrderBookTest\;CMake Files\OrderBookTest\tests\;CMake Files\OrderBookTest\libs\;CMake Files\OrderBookTest\libs\google_test\;CMake Files\OrderBookTest\libs\google_test\googletest\;CMake Files\OrderBookTest\libs\google_test\googletest\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OrderBook">
+				<Option output="/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/libOrderBook.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 OrderBook"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OrderBook/fast">
+				<Option output="/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/libOrderBook.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 OrderBook/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/OrderBook/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/OrderBook.cpp">
+			<Option target="OrderBook"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/OrderBook.h">
+			<Option target="OrderBook"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBook/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OrderBook\"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBookTest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OrderBookTest\"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBookTest/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OrderBookTest\tests\"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBookTest/libs/google_test/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OrderBookTest\libs\google_test\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/nathanzhao/CLionProjects/OrderBookRedo/OrderBookTest/libs/google_test/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\OrderBookTest\libs\google_test\googletest\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

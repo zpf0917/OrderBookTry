@@ -54,16 +54,21 @@ CMAKE_BINARY_DIR = /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-deb
 
 # The main recursive "all" target.
 all: CMakeFiles/OrderBookRedo.dir/all
+all: OrderBook/all
+all: OrderBookTest/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/OrderBookRedo.dir/clean
+clean: OrderBook/clean
+clean: OrderBookTest/clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: OrderBook/preinstall
+preinstall: OrderBookTest/preinstall
 
 .PHONY : preinstall
 
@@ -71,15 +76,15 @@ preinstall:
 # Target rules for target CMakeFiles/OrderBookRedo.dir
 
 # All Build rule for target.
-CMakeFiles/OrderBookRedo.dir/all:
+CMakeFiles/OrderBookRedo.dir/all: OrderBook/CMakeFiles/OrderBook.dir/all
 	$(MAKE) -f CMakeFiles/OrderBookRedo.dir/build.make CMakeFiles/OrderBookRedo.dir/depend
 	$(MAKE) -f CMakeFiles/OrderBookRedo.dir/build.make CMakeFiles/OrderBookRedo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target OrderBookRedo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target OrderBookRedo"
 .PHONY : CMakeFiles/OrderBookRedo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OrderBookRedo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OrderBookRedo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/OrderBookRedo.dir/rule
@@ -93,6 +98,193 @@ OrderBookRedo: CMakeFiles/OrderBookRedo.dir/rule
 CMakeFiles/OrderBookRedo.dir/clean:
 	$(MAKE) -f CMakeFiles/OrderBookRedo.dir/build.make CMakeFiles/OrderBookRedo.dir/clean
 .PHONY : CMakeFiles/OrderBookRedo.dir/clean
+
+#=============================================================================
+# Directory level rules for directory OrderBook
+
+# Recursive "all" directory target.
+OrderBook/all: OrderBook/CMakeFiles/OrderBook.dir/all
+
+.PHONY : OrderBook/all
+
+# Recursive "clean" directory target.
+OrderBook/clean: OrderBook/CMakeFiles/OrderBook.dir/clean
+
+.PHONY : OrderBook/clean
+
+# Recursive "preinstall" directory target.
+OrderBook/preinstall:
+
+.PHONY : OrderBook/preinstall
+
+#=============================================================================
+# Target rules for target OrderBook/CMakeFiles/OrderBook.dir
+
+# All Build rule for target.
+OrderBook/CMakeFiles/OrderBook.dir/all:
+	$(MAKE) -f OrderBook/CMakeFiles/OrderBook.dir/build.make OrderBook/CMakeFiles/OrderBook.dir/depend
+	$(MAKE) -f OrderBook/CMakeFiles/OrderBook.dir/build.make OrderBook/CMakeFiles/OrderBook.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target OrderBook"
+.PHONY : OrderBook/CMakeFiles/OrderBook.dir/all
+
+# Build rule for subdir invocation for target.
+OrderBook/CMakeFiles/OrderBook.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 OrderBook/CMakeFiles/OrderBook.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 0
+.PHONY : OrderBook/CMakeFiles/OrderBook.dir/rule
+
+# Convenience name for target.
+OrderBook: OrderBook/CMakeFiles/OrderBook.dir/rule
+
+.PHONY : OrderBook
+
+# clean rule for target.
+OrderBook/CMakeFiles/OrderBook.dir/clean:
+	$(MAKE) -f OrderBook/CMakeFiles/OrderBook.dir/build.make OrderBook/CMakeFiles/OrderBook.dir/clean
+.PHONY : OrderBook/CMakeFiles/OrderBook.dir/clean
+
+#=============================================================================
+# Directory level rules for directory OrderBookTest
+
+# Recursive "all" directory target.
+OrderBookTest/all: OrderBookTest/tests/all
+OrderBookTest/all: OrderBookTest/libs/google_test/googletest/all
+
+.PHONY : OrderBookTest/all
+
+# Recursive "clean" directory target.
+OrderBookTest/clean: OrderBookTest/tests/clean
+OrderBookTest/clean: OrderBookTest/libs/google_test/googletest/clean
+
+.PHONY : OrderBookTest/clean
+
+# Recursive "preinstall" directory target.
+OrderBookTest/preinstall: OrderBookTest/tests/preinstall
+OrderBookTest/preinstall: OrderBookTest/libs/google_test/googletest/preinstall
+
+.PHONY : OrderBookTest/preinstall
+
+#=============================================================================
+# Directory level rules for directory OrderBookTest/tests
+
+# Recursive "all" directory target.
+OrderBookTest/tests/all: OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all
+
+.PHONY : OrderBookTest/tests/all
+
+# Recursive "clean" directory target.
+OrderBookTest/tests/clean: OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/clean
+
+.PHONY : OrderBookTest/tests/clean
+
+# Recursive "preinstall" directory target.
+OrderBookTest/tests/preinstall:
+
+.PHONY : OrderBookTest/tests/preinstall
+
+#=============================================================================
+# Target rules for target OrderBookTest/tests/CMakeFiles/TestOrderBook.dir
+
+# All Build rule for target.
+OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all: OrderBook/CMakeFiles/OrderBook.dir/all
+OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/all
+OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build.make OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/depend
+	$(MAKE) -f OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build.make OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target TestOrderBook"
+.PHONY : OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all
+
+# Build rule for subdir invocation for target.
+OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 0
+.PHONY : OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/rule
+
+# Convenience name for target.
+TestOrderBook: OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/rule
+
+.PHONY : TestOrderBook
+
+# clean rule for target.
+OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/clean:
+	$(MAKE) -f OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build.make OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/clean
+.PHONY : OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/clean
+
+#=============================================================================
+# Directory level rules for directory OrderBookTest/libs/google_test/googletest
+
+# Recursive "all" directory target.
+OrderBookTest/libs/google_test/googletest/all: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/all
+OrderBookTest/libs/google_test/googletest/all: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all
+
+.PHONY : OrderBookTest/libs/google_test/googletest/all
+
+# Recursive "clean" directory target.
+OrderBookTest/libs/google_test/googletest/clean: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/clean
+OrderBookTest/libs/google_test/googletest/clean: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/clean
+
+.PHONY : OrderBookTest/libs/google_test/googletest/clean
+
+# Recursive "preinstall" directory target.
+OrderBookTest/libs/google_test/googletest/preinstall:
+
+.PHONY : OrderBookTest/libs/google_test/googletest/preinstall
+
+#=============================================================================
+# Target rules for target OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/all: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 0
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target gtest"
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles 0
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

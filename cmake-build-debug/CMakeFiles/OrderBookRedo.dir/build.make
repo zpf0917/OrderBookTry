@@ -79,6 +79,7 @@ OrderBookRedo_EXTERNAL_OBJECTS =
 
 OrderBookRedo: CMakeFiles/OrderBookRedo.dir/main.cpp.o
 OrderBookRedo: CMakeFiles/OrderBookRedo.dir/build.make
+OrderBookRedo: OrderBook/libOrderBook.a
 OrderBookRedo: CMakeFiles/OrderBookRedo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nathanzhao/CLionProjects/OrderBookRedo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable OrderBookRedo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OrderBookRedo.dir/link.txt --verbose=$(VERBOSE)

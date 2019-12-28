@@ -123,6 +123,58 @@ OrderBookRedo/fast:
 	$(MAKE) -f CMakeFiles/OrderBookRedo.dir/build.make CMakeFiles/OrderBookRedo.dir/build
 .PHONY : OrderBookRedo/fast
 
+#=============================================================================
+# Target rules for targets named OrderBook
+
+# Build rule for target.
+OrderBook: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OrderBook
+.PHONY : OrderBook
+
+# fast build rule for target.
+OrderBook/fast:
+	$(MAKE) -f OrderBook/CMakeFiles/OrderBook.dir/build.make OrderBook/CMakeFiles/OrderBook.dir/build
+.PHONY : OrderBook/fast
+
+#=============================================================================
+# Target rules for targets named TestOrderBook
+
+# Build rule for target.
+TestOrderBook: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestOrderBook
+.PHONY : TestOrderBook
+
+# fast build rule for target.
+TestOrderBook/fast:
+	$(MAKE) -f OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build.make OrderBookTest/tests/CMakeFiles/TestOrderBook.dir/build
+.PHONY : TestOrderBook/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build.make OrderBookTest/libs/google_test/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +211,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OrderBookRedo"
+	@echo "... OrderBook"
+	@echo "... TestOrderBook"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
